@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html ng-app="gpsApp">
+    <head>
+    	
+        <title>Enroll</title>	
+        <style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style>	
+		
+		
+		<!-- CSS
+		================================================== -->
+		
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- jquery.fancybox  -->
+     
+
+
+<script src="js/angular.min.js"></script>
+	 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  
+ 
+    </head>
+	
+    <body >
+	
+		<section ng-controller="contactCtrl">
+		
+				<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+
+<form>  
+    
+  <center><h1> Registeration Form</h1> </center>  
+  <hr>  
+  <label> Firstname </label>   
+<input type="text" name="firstname" ng-model="frm.name" placeholder= "Firstname" size="15" required />      
+<label> Lastname: </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<label>   
+Phone :  
+</label>  
+  
+<input type="text" name="phone" placeholder="phone no." size="10" required>   
+
+    <button type="submit" class="registerbtn" ng-click="send(frm)" >Submit</button>    
+    
+</form>
+
+
+</div>
+<div class="col-md-3"></div>
+</div>
+  
+					
+		</section>
+		
+		
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		
+	
+
+        <script src="link.js"></script>
+        
+		
+    </body>
+</html>
